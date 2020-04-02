@@ -42,12 +42,15 @@
 }
 
 % Emphasis color
-\colorlet{accent}{RoyalBlue}
-\colorlet{body}{Black!75}
-\colorlet{emphasis}{Black}
+\colorlet{emphasis}{RoyalBlue}
 
-\colorlet{ACCENT}{accent}
-\newcommand{\emphasis}[1]{\textcolor{accent}{#1}}
+% Body colors
+\colorlet{body}{Black!75}
+\colorlet{black}{Black}
+
+% Emphasis color fix
+\colorlet{EMPHASIS}{emphasis}
+\newcommand{\emphasis}[1]{\textcolor{emphasis}{#1}}
 
 % Header helper commands
 \newcommand{\name}[1]{\def\@name{#1}}
@@ -55,7 +58,7 @@
 
 \newcommand{\icon}[2]{
     \mbox{
-        \textcolor{accent}{#1}\hspace{.5em}#2\hspace{.5em}
+        \textcolor{emphasis}{#1}\hspace{.5em}#2\hspace{.5em}
     }
 }
 
@@ -79,7 +82,7 @@
 \newcommand{\cvSection}[1]{
   \bigskip
     {\bfseries\MakeUppercase{#1}}\\[-1ex]%
-    {\color{accent}\rule{\linewidth}{2pt}\par}
+    {\color{emphasis}\rule{\linewidth}{2pt}\par}
   \smallskip
 }
 
@@ -89,7 +92,7 @@
   \tikz
     \node[
         color=white,
-        fill=accent!\saturation,
+        fill=emphasis!\saturation,
         rounded corners = 1.5ex,
         inner xsep = .75ex,
         inner ysep = .75ex,
@@ -103,14 +106,14 @@
 \newcommand{\cvSkill}[2]{
     \textcolor{body}{#1}\hfill
     \foreach \x in {1,...,5}{
-        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{accent}} \faCircle }
+        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{emphasis}} \faCircle }
     }\par%
 }
 
 % Education step
 \newcommand{\cvEducation}[3]{
     {\color{body}#1\par}
-    \textbf{\color{accent}#2}\par
+    \textbf{\color{emphasis}#2}\par
     {\faCalendarCheckO \hspace{0.25em}\color{body}#3\par}
 }
 
@@ -121,7 +124,7 @@
             \makebox[0.45\linewidth][c]{
                 \begin{tikzpicture}
                     \draw [line width=.125cm,body!20] (0,.75cm) arc[start angle=90,radius=.75cm,delta angle=-360]; 
-                    \draw [line width=.125cm,accent] (0,.75cm) arc[start angle=90,radius=.75cm,delta angle=-3.60*#3]; 
+                    \draw [line width=.125cm,emphasis] (0,.75cm) arc[start angle=90,radius=.75cm,delta angle=-3.60*#3]; 
                     \node[align=center] at (0,0) {\bf #1};
                     \node[below=.85cm,align=center] at (0,0) {#2};
                 \end{tikzpicture}%
@@ -132,13 +135,13 @@
 
 % Career position
 \newcommand{\cvPosition}[5]{%
-  {\textbf{\color{emphasis}#1}}
+  {\textbf{\color{black}#1}}
     \newline
     \small{
     {
       \makebox[0.5\linewidth][l]{%
         \textbf{%
-            \color{accent}#2
+            \color{emphasis}#2
         }
         \textit{
             \hspace{0.25em}\color{body!80}#3}
@@ -155,7 +158,7 @@
 % Hobbies
 \newcommand{\cvHobby}[2]{%
     {
-      \makebox[0.45\linewidth][l]{\color{accent}{#2} \hspace{0.25em}\color{body}#1}
+      \makebox[0.45\linewidth][l]{\color{emphasis}{#2} \hspace{0.25em}\color{body}#1}
     }
 }
 
@@ -168,4 +171,3 @@
 \newcommand{\cvSidebar}[1]{
     \hspace{.0125\linewidth}\begin{minipage}[t]{.325\linewidth}#1\end{minipage}
 }%
-
