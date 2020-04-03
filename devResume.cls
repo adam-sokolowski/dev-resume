@@ -55,7 +55,7 @@
 
 \newcommand{\icon}[2]{
     \mbox{
-        \textcolor{accent}{#1}\hspace{.5em}#2\hspace{.5em}
+        \hspace{-0.25em}\textcolor{accent}{#1}\hspace{.5em}#2\hspace{.75em}
     }
 }
 
@@ -69,9 +69,9 @@
 % Resume header
 \newcommand{\cvHeader}{%
   \begingroup
-    {\color{body}\large\bfseries\MakeUppercase{\@name}\par}
+    \color{black}\large\bfseries\MakeUppercase{\@name}\par
     \smallskip
-    {\small\bfseries\@info\par}
+    \small\bfseries\@info\par
   \endgroup
 }
 
