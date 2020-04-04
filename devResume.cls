@@ -73,8 +73,8 @@
 
 % Timeline component
 \newcommand{\timeline}{
- {\color{body!20}\makebox[.015\linewidth][l]{\faCircle}%
-    \hskip.6pt\vrule width 2pt}
+ {\color{body!20}\makebox[5pt][l]{\faCircle}%
+    \hskip .75pt\vrule width 2pt}
 }
 
 % Resume header
@@ -144,6 +144,7 @@
 
 % Career position
 \newcommand{\cvPosition}[5]{%
+    \hspace{-.25cm}
     \timeline%
     \vspace{-.05cm}
     \hspace{.125cm}
