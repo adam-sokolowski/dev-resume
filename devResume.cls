@@ -9,7 +9,6 @@
 % Required to perform numbers comparison
 \RequirePackage{etoolbox}
 % Icons and decorations for the template
-\RequirePackage{fontawesome5}[fixed]
 
 % Disable page numbers
 \pagestyle{empty}
@@ -18,6 +17,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[default]{lato}
+
+% FontAwesome icons with fixed width
+\usepackage[fixed]{fontawesome5}
 
 % Package for clickable links
 \usepackage{hyperref}
@@ -58,7 +60,7 @@
 
 \newcommand{\icon}[2]{
     \mbox{
-        \hspace{-.25em}\textcolor{accent}{#1}\hspace{.5em}#2\hspace{.75em}
+        \hspace{-.5em}\textcolor{accent}{#1}#2
     }
 }
 
@@ -71,23 +73,23 @@
 
 % Timeline component
 \newcommand{\timeline}{
- \color{body!20}\makebox[.015\linewidth][l]{\faDotCircle}%
-    \hskip-1.5pt\vrule width 2pt
+ {\color{body!20}\makebox[.015\linewidth][l]{\faCircle}%
+    \hskip.6pt\vrule width 2pt}
 }
 
 % Resume header
 \newcommand{\cvHeader}{%
     {
-        \color{black}\Large\textbf{\MakeUppercase{\@name}}\par
+        \color{accent}\LARGE\textbf{\MakeUppercase{\@name}}\par
         \medskip
-        \small\@info\par
+        {\color{black!90}\small\@info\par}
     }
 }
 
 % Section title
 \newcommand{\cvSection}[1]{
   \bigskip
-    {\bfseries\MakeUppercase{#1}}\\[-1ex]%
+    {\color{black}\bfseries\MakeUppercase{#1}}\\[-1ex]%
     {\color{accent}\rule{\linewidth}{2pt}\par}
   \smallskip
 }
@@ -113,7 +115,7 @@
 \newcommand{\cvSkill}[2]{
     \textcolor{body}{#1}\hfill
     \foreach \x in {1,...,5}{
-        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{accent}} \faCircle }
+        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{accent}}\hspace{-.5em}\faCircle }
     }\par%
 }
 
@@ -121,7 +123,7 @@
 \newcommand{\cvEducation}[3]{
     {\textbf{\color{black}#1}\par}
     {\color{accent}#2\par}
-    \faCalendar*[regular] \hspace{.25em} #3\par
+    \hspace{-.5em} \faCalendar*[regular] #3\par
 }
 
 % Circular progress arc
@@ -152,9 +154,9 @@
             {
               \makebox[.5\linewidth][l]{%
                 \textbf{\color{accent}#2}
-                    \color{body!60} (#3)
+                    \color{body!60} \faMapMarker*#3
                 }
-                \makebox[.5\linewidth][r]{\color{body}\faCalendar*[regular] \hspace{.125cm}#4}
+                \makebox[.5\linewidth][r]{\color{body}\faCalendar*[regular]#4}
             }
         \vspace{-.25cm}
         \begin{itemize}
@@ -163,18 +165,15 @@
         \vspace{.25cm}
         \medskip
     \end{minipage}
-
 }
 
 % Hobbies
 \newcommand{\cvHobby}[2]{%
-    {
-      \makebox[.45\linewidth][l]{\color{accent}{#2} \hspace{.25em}\color{body}#1}\vspace{.125em}
-    }
+    {\hspace{-.25em}\color{accent}{#2} \color{body} #1\vspace{0.25em}\par}
 }
 
 \newcommand{\cvContent}[1]{
-    \hspace{.0125\linewidth}\begin{minipage}[t]{.6250\linewidth}#1\end{minipage}
+    \hspace{.0125\linewidth}\begin{minipage}[t]{.625\linewidth}#1\end{minipage}
 }%
 
 \newcommand{\cvSidebar}[1]{
