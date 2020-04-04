@@ -11,7 +11,7 @@
 % Icons and decorations for the template
 \RequirePackage{fontawesome5}[fixed]
 
-% Supress page numbers
+% Disable page numbers
 \pagestyle{empty}
 
 % Encoding and font style
@@ -28,7 +28,7 @@
 % Allows custom color definitions
 \usepackage[dvipsnames]{xcolor}
 
-%
+% Package for drawing nodes
 \usepackage{tikz}
 
 % Alternative list style - package and settings
@@ -49,6 +49,8 @@
 \colorlet{ACCENT}{accent}
 \newcommand{\emphasis}[1]{\textcolor{accent}{#1}}
 
+\AtBeginDocument{\color{body}}
+
 % Header helper commands
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\info}[1]{\def\@info{#1}}
@@ -68,8 +70,8 @@
 
 % Timeline component
 \newcommand{\timeline}{
- \color{body!20}\makebox[0.015\linewidth][l]{\faCircle}%
-    \hskip-0.5pt\vrule width 1.5pt\hspace{\labelsep}%
+ \color{body!20}\makebox[0.015\linewidth][l]{\faDotCircle}%
+    \hskip-1.5pt\vrule width 2pt
 }
 
 % Resume header
@@ -101,6 +103,7 @@
         text depth = .25ex,
         below = .5ex
     ]{#1};
+    \vspace{0.5px}
 }
 
 % Skill dots
@@ -114,8 +117,8 @@
 % Education step
 \newcommand{\cvEducation}[3]{
     {\textbf{\color{black}#1}\par}
-    \color{accent}#2\par
-    \color{body} \faCalendar*[regular] \hspace{0.25em} #3\par
+    {\color{accent}#2\par}
+    \faCalendar*[regular] \hspace{0.25em} #3\par
 }
 
 % Circular progress arc
