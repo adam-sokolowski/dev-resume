@@ -122,7 +122,7 @@
 \newcommand{\cvSkill}[2]{
     \textcolor{body}{#1}\hfill
     \foreach \x in {1,...,5}{
-        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{accent}}\hspace{-.5em}\faCircle }
+        \space{\ifnumgreater{\x}{#2}{\color{body!25}}{\color{accent}}\hspace{-1em}\faCircle }
     }\par%
 }
 
