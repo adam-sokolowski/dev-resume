@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{techResume}[2020/04/01 Software developer resume - Adam Sokolowski]
+\ProvidesClass{devResume}[2020/04/01 Software developer resume - Adam Sokolowski]
 
 % Base class
-\LoadClass{article}
+\LoadClass[10pt,a4paper]{article}
 
 % Margins setup
 \RequirePackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
@@ -43,8 +43,15 @@
     after=\vskip.125\baselineskip
 }
 
-% Emphasis color
-\colorlet{accent}{RoyalBlue}
+% Configurable main color
+\colorlet{accent}{ForestGreen}
+\define@key{devResume.cls}{color}[]{%
+    \colorlet{accent}{#1}
+}
+\ExecuteOptionsX{color}
+\ProcessOptionsX%
+
+
 \colorlet{body}{Black!75}
 \colorlet{emphasis}{Black}
 
