@@ -8,23 +8,23 @@ Dependencies: fontAwesome 5. Ready for online and offline complilation
 
 | Available:                      |                                 |                                |                                 |
 |---------------------------------|---------------------------------|--------------------------------|---------------------------------|
-| $\color{#FBB982}Apricot$        | $\color{#00B5BE}Aquamarine$     | $\color{#C04F17}Bittersweet$   | $\color{#221E1F}Black$          |
-| $\color{#2D2F92}Blue$           | $\color{#00B3B8}BlueGreen$      | $\color{#473992}BlueViolet$    | $\color{#B6321C}BrickRed$       |
-| $\color{#792500}Brown$          | $\color{#F7921D}BurntOrange$    | $\color{#74729A}CadetBlue$     | $\color{#F282B4}CarnationPink$  |
-| $\color{#00A2E3}Cerulean$       | $\color{#41B0E4}CornflowerBlue$ | $\color{#00AEEF}Cyan$          | $\color{#FDBC42}Dandelion$      |
-| $\color{#A4538A}DarkOrchid$     | $\color{#00A99D}Emerald$        | $\color{#009B55}ForestGreen$   | $\color{#8C368C}Fuchsia$        |
-| $\color{#FFDF42}Goldenrod$      | $\color{#949698}Gray$           | $\color{#00A64F}Green$         | $\color{#DFE674}GreenYellow$    |
-| $\color{#00A99A}JungleGreen$    | $\color{#F49EC4}Lavender$       | $\color{#8DC73E}LimeGreen$     | $\color{#EC008C}Magenta$        |
-| $\color{#A9341F}Mahogany$       | $\color{#AF3235}Maroon$         | $\color{#F89E7B}Melon$         | $\color{#006795}MidnightBlue$   |
-| $\color{#A93C93}Mulberry$       | $\color{#006EB8}NavyBlue$       | $\color{#3C8031}OliveGreen$    | $\color{#F58137}Orange$         |
-| $\color{#ED135A}OrangeRed$      | $\color{#AF72B0}Orchid$         | $\color{#F7965A}Peach$         | $\color{#7977B8}Periwinkle$     |
-| $\color{#008B72}PineGreen$      | $\color{#92268F}Plum$           | $\color{#00B0F0}ProcessBlue$   | $\color{#99479B}Purple$         |
-| $\color{#974006}RawSienna$      | $\color{#ED1B23}Red$            | $\color{#F26035}RedOrange$     | $\color{#A1246B}RedViolet$      |
-| $\color{#EF559F}Rhodamine$      | $\color{#0071BC}RoyalBlue$      | $\color{#613F99}RoyalPurple$   | $\color{#ED017D}RubineRed$      |
-| $\color{#F69289}Salmon$         | $\color{#3FBC9D}SeaGreen$       | $\color{#671800}Sepia$         | $\color{#46C5DD}SkyBlue$        |
-| $\color{#C6DC67}SpringGreen$    | $\color{#DA9D76}Tan$            | $\color{#00AEB3}TealBlue$      | $\color{#D883B7}Thistle$        |
-| $\color{#00B4CE}Turquoise$      | $\color{#58429B}Violet$         | $\color{#EF58A0}VioletRed$     | $\color{#000}White$          |
-| $\color{#EE2967}WildStrawberry$ | $\color{#FFF200}Yellow$         | $\color{#98CC70}YellowGreen$   | $\color{#FAA21A}YellowOrange$   |
+| #FBB982 - Apricot        | #00B5BE - Aquamarine     | #C04F17 - Bittersweet   | #221E1F - Black          |
+| #2D2F92 - Blue           | #00B3B8 - BlueGreen      | #473992 - BlueViolet    | #B6321C - BrickRed       |
+| #792500 - Brown          | #F7921D - BurntOrange    | #74729A - CadetBlue     | #F282B4 - CarnationPink  |
+| #00A2E3 - Cerulean       | #41B0E4 - CornflowerBlue | #00AEEF - Cyan          | #FDBC42 - Dandelion      |
+| #A4538A - DarkOrchid     | #00A99D - Emerald        | #009B55 - ForestGreen   | #8C368C - Fuchsia        |
+| #FFDF42 - Goldenrod      | #949698 - Gray           | #00A64F - Green         | #DFE674 - GreenYellow    |
+| #00A99A - JungleGreen    | #F49EC4 - Lavender       | #8DC73E - LimeGreen     | #EC008C - Magenta        |
+| #A9341F - Mahogany       | #AF3235 - Maroon         | #F89E7B - Melon         | #006795 - MidnightBlue   |
+| #A93C93 - Mulberry       | #006EB8 - NavyBlue       | #3C8031 - OliveGreen    | #F58137 - Orange         |
+| #ED135A - OrangeRed      | #AF72B0 - Orchid         | #F7965A - Peach         | #7977B8 - Periwinkle     |
+| #008B72 - PineGreen      | #92268F - Plum           | #00B0F0 - ProcessBlue   | #99479B - Purple         |
+| #974006 - RawSienna      | #ED1B23 - Red            | #F26035 - RedOrange     | #A1246B - RedViolet      |
+| #EF559F - Rhodamine      | #0071BC - RoyalBlue      | #613F99 - RoyalPurple   | #ED017D - RubineRed      |
+| #F69289 - Salmon         | #3FBC9D - SeaGreen       | #671800 - Sepia         | #46C5DD - SkyBlue        |
+| #C6DC67 - SpringGreen    | #DA9D76 - Tan            | #00AEB3 - TealBlue      | #D883B7 - Thistle        |
+| #00B4CE - Turquoise      | #58429B - Violet         | #EF58A0 - VioletRed     | #000 - White             |
+| #EE2967 - WildStrawberry | #FFF200 - Yellow         | #98CC70 - YellowGreen   | #FAA21A - YellowOrange   |
 
 # Usage
 
